@@ -51,7 +51,10 @@ class MainController extends Controller
     }
 
     public function car($car = null) {
-        dd($car);
-        return view('base', ['car' => $car]);
+        return view('base');
+    }
+
+    public function admin($admin = null) {
+        return view('admin');
     }
 }

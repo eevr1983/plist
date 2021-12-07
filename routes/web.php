@@ -26,4 +26,5 @@ Route::get('/employees', [MainController::class, 'employees']);
 Route::get('/organizations', [MainController::class, 'organizations']);
 Route::get('/settings', [MainController::class, 'settings']);
 Route::get('/support', [MainController::class, 'support']);
-Route::get('/cars/{ car? }', [MainController::class, 'car']);
+Route::get('/cars/{car}', [MainController::class, 'car']);
+Route::get('/admin/{path?}', [MainController::class, 'admin']);
